@@ -1,0 +1,16 @@
+---------------------------------------------------------
+Name: score_counter.wav
+Licence: CC licence - Attribution License.
+Author: rhodesmas
+Link: https://freesound.org/people/rhodesmas/sounds/342759/
+---------------------------------------------------------
+Name: time_out.wav
+Licence: CC licence - CC0
+Author: fins
+Link: https://freesound.org/people/fins/sounds/146734/
+---------------------------------------------------------
+Name: game_over.wav
+Licence: CC licence - Attribution License.
+Author: deleted_user_877451
+Link: https://freesound.org/people/deleted_user_877451/sounds/76376/
+---------------------------------------------------------

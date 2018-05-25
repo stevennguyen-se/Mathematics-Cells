@@ -1,0 +1,358 @@
+@font-face {
+    font-family: "chunkfiveroman";
+    src: url('../fonts/chunkfive-webfont.woff') format('woff');
+}
+
+body {
+    background: #faf8ef;
+    font-family: Arial;
+    color: #3a3c45;
+    margin: 0;
+}
+
+.heading:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1.title {
+    font-size: 80px;
+    margin: 0;
+    display: block;
+    float: left;
+}
+
+h3.level {
+    margin: 0;
+    font-size: 25px;
+}
+
+@-webkit-keyframes move-up {
+    0% {
+        top: 25px;
+        opacity: 1;
+    }
+
+    100% {
+        top: -50px;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes move-up {
+    0% {
+        top: 25px;
+        opacity: 1;
+    }
+
+    100% {
+        top: -50px;
+        opacity: 0;
+    }
+}
+
+@keyframes move-up {
+    0% {
+        top: 25px;
+        opacity: 1;
+    }
+
+    100% {
+        top: -50px;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes tada {
+    0% {
+        transform: translateY(0)
+    }
+    5.55556% {
+        transform: translateY(0)
+    }
+    11.11111% {
+        transform: translateY(0)
+    }
+    22.22222% {
+        transform: translateY(-15px)
+    }
+    27.77778% {
+        transform: translateY(0)
+    }
+    33.33333% {
+        transform: translateY(-15px)
+    }
+    44.44444% {
+        transform: translateY(0)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@-moz-keyframes tada {
+    0% {
+        transform: translateY(0)
+    }
+    5.55556% {
+        transform: translateY(0)
+    }
+    11.11111% {
+        transform: translateY(0)
+    }
+    22.22222% {
+        transform: translateY(-15px)
+    }
+    27.77778% {
+        transform: translateY(0)
+    }
+    33.33333% {
+        transform: translateY(-15px)
+    }
+    44.44444% {
+        transform: translateY(0)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes tada {
+    0% {
+        transform: translateY(0)
+    }
+    5.55556% {
+        transform: translateY(0)
+    }
+    11.11111% {
+        transform: translateY(0)
+    }
+    22.22222% {
+        transform: translateY(-15px)
+    }
+    27.77778% {
+        transform: translateY(0)
+    }
+    33.33333% {
+        transform: translateY(-15px)
+    }
+    44.44444% {
+        transform: translateY(0)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+.score-container {
+    position: relative;
+    float: right;
+    background: #3a3c45;
+    padding: 15px 25px;
+    font-size: 25px;
+    height: 25px;
+    line-height: 47px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: white;
+    margin-top: 10px;
+}
+
+.score-container:after {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    left: 0;
+    content: "Score";
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 13px;
+    text-align: center;
+    color: #eee4da;
+}
+
+.score-container .score-addition {
+    position: absolute;
+    right: 25px;
+    color: #5de262;
+    font-size: 25px;
+    line-height: 25px;
+    z-index: 5;
+    -webkit-animation: move-up 600ms ease-in;
+    -moz-animation: move-up 600ms ease-in;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+}
+
+.score-container .score-subtraction {
+    position: absolute;
+    right: 25px;
+    color: #ff0000;
+    font-size: 25px;
+    line-height: 25px;
+    z-index: 5;
+    -webkit-animation: move-up 600ms ease-in;
+    -moz-animation: move-up 600ms ease-in;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+}
+
+.score-container .score-extra {
+    position: absolute;
+    right: 25px;
+    color: #ff912e;
+    font-size: 25px;
+    line-height: 25px;
+    z-index: 5;
+    animation: move-up 600ms ease-in;
+    -webkit-animation: move-up 600ms ease-in;
+    -moz-animation: move-up 600ms ease-in;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+}
+
+.tada {
+    transform-origin: 50% 50%;
+    animation: tada 2s ease;
+    -webkit-animation: tada 2s ease;
+    -moz-animation: tada 2s ease;
+}
+
+.container {
+    width: 400px;
+    margin: 40px auto;
+}
+
+.center {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+hr {
+    width: 50%;
+}
+
+.description {
+    height: 400px;
+    width: 400px;
+    overflow: scroll;
+    color: black;
+    font-size: 16px;
+    background: white;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 360px;
+    transform: translate(-50%, -25%) scale(0);
+    z-index: 5;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.description h2 {
+    margin-top: 5px;
+}
+
+.description.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -25%) scale(1);
+}
+
+.info-button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 0px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    background-color: #efb04b;
+    display: block;
+}
+
+.launch-screen-button {
+    background: transparent;
+    color: lawngreen;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 15px 60px;
+    border: 3px solid lawngreen;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+.launch-screen-button:hover {
+    background: lawngreen;
+    color: black;
+}
+
+.timer {
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+    line-height: 80px;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+    color: #3a3c45;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    transition: .5s all ease-in-out;
+    border: lightgray solid 2px;
+}
+
+.launch-screen {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    visibility: hidden;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: rgba(1, 1, 1, 1);
+    transition: .5s all ease-in-out;
+}
+
+.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.launch-screen-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.launch-screen-content h1 {
+    font-family: 'chunkfiveroman';
+    font-weight: lighter;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0;
+    color: #ff912e;
+    font-size: 2.5em;
+    line-height: 1.0;
+    transform: scale(1, 2);
+}
+
+.launch-screen-content p {
+    font-family: 'Space Mono', monospace;
+    color: lightgray;
+    font-size: 1.5em;
+    margin: 2em 0;
+}
